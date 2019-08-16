@@ -1,0 +1,10 @@
+
+.container{
+	/* background-color: #888888; */
+	/* height: calc(100vh - 50px ); */
+		background-color:f9f9f9;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
