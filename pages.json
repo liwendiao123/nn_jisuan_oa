@@ -69,11 +69,8 @@
 					"titleNView": {
 						"buttons": [
 							{
-				         "float": "right",  
-                    "fontSize": "27px",  
-                    "fontSrc": "__wap2app.ttf",//wap2app内置字体文件  
-                    "text": "\ue602",  
-                    "onclick": "javascript:plus.webview.getWebviewById('page1').evalJS('myshare();')"  
+								"text": "保存",
+								"fontSize": "14"
 							}
 						]
 					}

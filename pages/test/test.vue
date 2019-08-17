@@ -1,5 +1,52 @@
 <template>
 	<view class="container">
+	
+		<task-process-single></task-process-single>
+	
+		<task-process></task-process>
+		<view class="" style="height: 20px;"></view>
+	
+	
+		<!-- 项目首页 -->
+		<view class="flex">
+			<chart-arc></chart-arc>
+			<chart-arc></chart-arc>
+		</view>
+		
+		<statistis></statistis>
+		
+		
+		<!-- 查找项目页面 -->
+		<uni-collapse @change="change">
+			<uni-collapse-item title="项目类别">
+				<uni-list>
+					<uni-list-item title="标题文字" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" />
+					<uni-list-item title="标题文字" note="描述信息" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/uni.png" />
+					</uni-list>
+			</uni-collapse-item>
+		</uni-collapse>
+		<tabbar :list="taskList"></tabbar>
+		<view class="uni-form-item uni-column">
+			<input class="uni-input" name="input" placeholder="请输入关键字搜索" />
+		</view>
+		<uni-collapse @change="change">
+			<uni-collapse-item title="2019年6月开始" :open="true" >
+				<uni-list>
+					<uni-list-item title="标题文字" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" />
+					<uni-list-item title="标题文字" note="描述信息" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/uni.png" />
+					</uni-list>
+			</uni-collapse-item>
+		</uni-collapse>
+		
+		
+		
+		<!-- 拖拽页面 -->
+		<dragSort :list="dragList"  @change="onDragSortChange"></dragSort>
+		<view class="" style="height: 20px;"></view>
+		
+		<!-- 任务栏页面 -->
+		<task-list :list="taskList"></task-list>
+		
 		<view>
 		<view class="example-title">基本用法</view>
 		<uni-list>
