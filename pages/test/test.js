@@ -65,6 +65,33 @@ export default {
 				},
 			],
 			
+			//顶部tab选项卡
+			items: [
+				'选项卡1',
+				'选项卡2',
+				'选项卡3'
+			],
+			colors: [
+				'#007aff',
+				'#4cd964',
+				'#dd524d'
+			],
+			current: 0,
+			colorIndex: 0,
+			activeColor: '#007aff',
+			styleType: 'text',
+			
+			// 表格
+			tableData : [
+				{name:"张三",age:18,gender:"难"},
+				{name:"张三",age:18,gender:"难"},
+			],
+			columns :[
+				{title:"姓名",key:"name",width:100},
+				{title:"性别",key:"gender",width:325},
+				{title:"年龄",key:"age",width:'325rpx'},
+			],
+			
 		};
 	},
 
@@ -84,6 +111,12 @@ export default {
 		
 		change(e){
 			console.log(e)
-		}
+		},
+		
+		onClickItem(index) {
+			if (this.current !== index) {
+				this.current = index
+			}
+		},
 	},
 }

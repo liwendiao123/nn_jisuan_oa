@@ -1,5 +1,33 @@
 <template>
 	<view class="container">
+	<uni-list>
+		<team-item :show-badge="true" :badge-text="12" :tag="['周报管理','项目管理','项目管理']" title="标题文字"  />
+		<team-item :show-badge="true" :badge-text="12" :tag="['工作总数:999','任务总数:999','项目:999']" title="标题文字"  />
+	</uni-list>
+	
+		
+	<view class="" style="height: 20px;"></view>
+		
+		
+	<z-table :tableData="tableData" :columns="columns" :stickSide="true"></z-table>	
+	<view class="" style="height: 20px;"></view>
+		
+		
+	<task-program></task-program>
+	<view class="" style="height: 20px;"></view>
+	<!-- mark标签 -->
+	<xx-mark></xx-mark>
+	<xx-mark type="ing" text="哈哈"></xx-mark>
+	<xx-mark type="complete" text="完成"></xx-mark>
+	<xx-mark type="close" text="好多"></xx-mark>
+		
+	<!-- 顶部选项卡 -->
+	<uni-segmented-control 
+		:current="current" 
+		:values="items" 
+		:style-type="styleType" 
+		:active-color="activeColor" 
+		@clickItem="onClickItem" />
 	
 		<task-process-single></task-process-single>
 	

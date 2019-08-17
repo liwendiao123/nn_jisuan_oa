@@ -11,11 +11,8 @@
 				<view class="uni-list-item__content-title">{{ title }}</view>
 				<view v-if="note" class="uni-list-item__content-note">{{ note }}</view>
 			</view>
-			<view v-if=" showBadge || showText || showArrow || showSwitch" class="uni-list-item__extra">
-				<view v-if="showText" class="" >{{badgeText}}</view>
-				<uni-badge v-if="showBadge" :type="badgeType" :text="badgeText" />				
-				<switch v-if="showSwitch" :disabled="disabled" :checked="switchChecked" @change="onSwitchChange" />
-				<uni-icon class="uni-icon-wrapper" v-if="showArrow" :size="20" color="#bbb" type="arrowright" />
+			<view class="uni-list-item__extra">				
+				<uni-badge v-for="(item,key) in tag" class="tag"  :type="badgeType" :text="item" />		
 			</view>
 		</view>
 	</view>
@@ -30,8 +27,13 @@
 			uniIcon,
 			uniBadge
 		},
-		props: {
-			
+		props: {		
+			tag: {
+				type: Array,
+				default () {
+					return ["1","2"]
+				}
+			}, // badge内容
 			title: {
 				type: String,
 				default: ''
@@ -201,5 +203,10 @@
 
 	.uni-list>.uni-list-item:last-child .uni-list-item-container:after {
 		height: 0
+	}
+	
+	
+	.tag{
+		margin-left: 5px;
 	}
 </style>
