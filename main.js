@@ -18,7 +18,7 @@ import uniCollapse from '@/components/uni-collapse/uni-collapse.vue'
 import uniCollapseItem from '@/components/uni-collapse-item/uni-collapse-item.vue'
 import uniSegmentedControl from '@/components/uni-segmented-control/uni-segmented-control.vue'
 import zTable from '@/components/z-table/z-table.vue'
-
+import uniNoticeBar from '@/components/uni-notice-bar/uni-notice-bar.vue'
 
 // 公共组件
 Vue.component('page-head', pageHead)
@@ -32,8 +32,9 @@ Vue.component('uni-list', uniList)
 Vue.component('uni-list-item', uniListItem)
 Vue.component('uni-collapse', uniCollapse)
 Vue.component('uni-collapse-item', uniCollapseItem)
-Vue.component('uni-segmented-control', uniSegmentedControl)
+Vue.component('uni-segmented-control', uniSegmentedControl)  // 顶部选项卡
 Vue.component('z-table', zTable)
+Vue.component('uni-notice-bar', uniNoticeBar)  // 提示框
 
 
 // 自定义插件
@@ -57,7 +58,7 @@ Vue.component('task-process-single', taskProcessSingle)
 Vue.component('task-program', taskProgram)
 Vue.component('tabbar', tabbar)
 Vue.component('task-list', taskList)
-Vue.component('chart-arc', chartArc)
+Vue.component('chart-arc', chartArc) // 饼状图
 Vue.component('statistis', statistis)
 Vue.component('xx-mark', mark)
 Vue.component('team-item', teamItem)

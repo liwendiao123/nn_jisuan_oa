@@ -7,7 +7,7 @@
               ? activeColor
               : '#fff'
             : styleType === 'text'
-              ? '#000'
+              ? '#999'
               : activeColor,
         backgroundColor: index === currentIndex && styleType === 'button' ? activeColor : ''
       }" class="segmented-control-item" @click="_onClick(index)">
@@ -32,7 +32,8 @@
 			},
 			activeColor: {
 				type: String,
-				default: '#007aff'
+				default: '#2785d0',
+				// 
 			},
 			styleType: {
 				type: String,
@@ -72,7 +73,9 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		width: 75%;
+		width: 100%;
+		background-color: #ffffff;
+		/* width: 75%; */
 		font-size: 28upx;
 		box-sizing: border-box;
 		margin: 0 auto;
@@ -89,7 +92,7 @@
 	.segmented-control-item {
 		flex: 1;
 		text-align: center;
-		line-height: 60upx;
+		line-height: 80upx;
 		box-sizing: border-box;
 		border-left: 1px solid
 	}

@@ -22,12 +22,18 @@
 	<xx-mark type="close" text="好多"></xx-mark>
 		
 	<!-- 顶部选项卡 -->
-	<uni-segmented-control 
+<!-- 	<uni-segmented-control 
 		:current="current" 
 		:values="items" 
 		:style-type="styleType" 
 		:active-color="activeColor" 
-		@clickItem="onClickItem" />
+		@clickItem="onClickItem" /> -->
+		
+	<uni-segmented-control 
+			:current="current" 
+			:values="['项目','员工']" 
+			style-type="text" 
+			@clickItem="onClickItem" />
 	
 		<task-process-single></task-process-single>
 	

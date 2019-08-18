@@ -7,7 +7,7 @@
 		<view class="summary">
 			<view class="title">{{node.mode==MODE_WORK?"工作总数":"任务总数" }}</view>
 			<view class="number">2</view>
-			<view class="title">工作完成数</view>
+			<view class="title">完成数</view>
 			<view class="number">2</view>
 		</view>
 		<!-- <canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3" style="margin-left: 250upx;"></canvas> -->
@@ -158,7 +158,7 @@
 <style>
 	/* summary */
 	.summary{
-		text-align: center;
+		text-align: left;
 	}
 	.title{
 		font-size: 9pt;
@@ -182,6 +182,7 @@
 		/* position: relative; */
 		display: flex;
 		align-items: center;
+		padding:10px 5px;
 	}
 
 	.charts3 {

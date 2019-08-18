@@ -1,29 +1,239 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/1_main/1_main",
 			"style": {
-				"navigationBarTitleText": "科技情报",
+				"navigationBarTitleText": "首页",
 				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#000000"
-				// "navigationBarTextStyle":"black",
-				// "navigationBarBackgroundColor":"#ffffff"
-				// "app-plus": {
-				// 	"titleNView": {
-				// 		"titleColor": "#fff",
-				// 		"backgroundColor": "#007AFF",
-				// 		"buttons": [{
-				// 			"fontSrc": "/static/uni.ttf",
-				// 			"text": "\ue537",
-				// 			"width": "auto",
-				// 			"fontSize": "28px",
-				// 			"color": "#fff"
-				// 		}],
-				// 		
-				// 	}
-				// }
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		{
+			"path": "pages/2_work/2_work",
+			"style": {
+				"navigationBarTitleText": "工作清单管理",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/2_work_1search/2_work_1search",
+			"style": {
+				"navigationBarTitleText": "工作清单查询",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/2_work_2editor/2_work_2editor",
+			"style": {
+				"navigationBarTitleText": "工作清单详情",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/2_work_3sub/2_work_3sub",
+			"style": {
+				"navigationBarTitleText": "子任务",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		
+		
+		{
+			"path": "pages/3_add/3_add",
+			"style": {
+				"navigationBarTitleText": "新增",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
 			}
 		},{
+			"path": "pages/4_self/4_self",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/5_task_1self/5_task_1self",
+			"style": {
+				"navigationBarTitleText": "我的任务",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/5_task_2total/5_task_2total",
+			"style": {
+				"navigationBarTitleText": "任务统计",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/5_task_3pro/5_task_3pro",
+			"style": {
+				"navigationBarTitleText": "项目人员工作量与实施情况",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/5_task_4staff/5_task_4staff",
+			"style": {
+				"navigationBarTitleText": "员工工作量完成情况",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		{
+			"path": "pages/6_pro/6_pro",
+			"style": {
+				"navigationBarTitleText": "项目明细",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro/6_pro",
+			"style": {
+				"navigationBarTitleText": "项目明细",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_1detail/6_pro_1detail",
+			"style": {
+				"navigationBarTitleText": "项目详情",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_2team/6_pro_2team",
+			"style": {
+				"navigationBarTitleText": "项目团队",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_3team_editor/6_pro_3team_editor",
+			"style": {
+				"navigationBarTitleText": "编辑团队成员",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_4team_add/6_pro_4team_add",
+			"style": {
+				"navigationBarTitleText": "添加团队成员",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_5task/6_pro_5task",
+			"style": {
+				"navigationBarTitleText": "项目任务",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},{
+			"path": "pages/6_pro_6task_detail/6_pro_6task_detail",
+			"style": {
+				"navigationBarTitleText": "任务详情",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		{
+			"path": "pages/6_pro_7change/6_pro_7change",
+			"style": {
+				"navigationBarTitleText": "变更记录",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/6_pro_8show/6_pro_8show",
+			"style": {
+				"navigationBarTitleText": "演示管理",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/6_pro_9week/6_pro_9week",
+			"style": {
+				"navigationBarTitleText": "周报管理",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/6_pro_9week_editor/6_pro_9week_editor",
+			"style": {
+				"navigationBarTitleText": "周报详情",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},		
+		
+		{
+			"path": "pages/6_pro_9week_task/6_pro_9week_task",
+			"style": {
+				"navigationBarTitleText": "周报任务",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		{
+			"path": "pages/6_pro_10total/6_pro_10total",
+			"style": {
+				"navigationBarTitleText": "项目工作量统计",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		
+		
+		{
+			"path": "pages/7_more/7_more",
+			"style": {
+				"navigationBarTitleText": "更多",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		{
+			"path": "pages/7_more_1pro/7_more_1pro",
+			"style": {
+				"navigationBarTitleText": "所有项目",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		{
+			"path": "pages/7_more_2staff/7_more_2staff",
+			"style": {
+				"navigationBarTitleText": "人员分工",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#2785d0"
+			}
+		},
+		
+		
+		{
 			"path": "pages/user/user",
 			"style": {
 				"navigationBarTitleText": "我的",
@@ -90,16 +300,31 @@
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/1_main/1_main",
 				"iconPath": "static/images/tabbar5_1.png",
 				"selectedIconPath": "static/images/tabbar5-actived.png",
-				"text": "科技项目"
+				"text": "首页"
+			},{
+				"pagePath": "pages/2_work/2_work",
+				"iconPath": "static/images/tabbar5_1.png",
+				"selectedIconPath": "static/images/tabbar5-actived.png",
+				"text": "工作"
+			},{
+				"pagePath": "pages/3_add/3_add",
+				"iconPath": "static/images/tabbar5_1.png",
+				"selectedIconPath": "static/images/tabbar5-actived.png",
+				"text": "新增"
 			},
 			{
-				"pagePath": "pages/user/user",
+				"pagePath": "pages/4_self/4_self",
 				"iconPath": "static/images/tabbar4_1.png",
 				"selectedIconPath": "static/images/tabbar4-actived.png",
 				"text": "我的"
+			},{
+				"pagePath": "pages/7_more/7_more",
+				"iconPath": "static/images/tabbar4_1.png",
+				"selectedIconPath": "static/images/tabbar4-actived.png",
+				"text": "更多"
 			}
 		]
 	}

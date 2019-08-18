@@ -2,23 +2,19 @@
    <view class="page">
 		<view class="content">
 				<view class="header">
-					<text class=" uni-ellipsis" >名字我的</text>
-					<view   class="status pre">项目经理</view>
+					<text class=" uni-ellipsis" >{{node.name}}</text>
+					<view   class="status pre">{{node.position}}</view>
 		
 				</view>
 				<view class="" style="height: 10px;"></view>
 
 				<view class="flex task">
-					<view class="" style="font-size: 9pt">计划任务数：100</view>
-					<view class="" style="font-size: 9pt">任务完成数：80</view>
+					<view style="font-size: 9pt">任务指派数：{{node.task}}</view>
+					<view style="font-size: 9pt">任务完成数：{{node.task_complete}}</view>
 				</view>				
 				<view class="progress-box">
 					<progress percent="20" show-info stroke-width="3"  activeColor="#ff6633"  />
 				</view>
-				
-				
-				
-				
 				
 				<!-- <view v-if="node.status == PRE" class="uni-text-small uni-ellipsis  "> <view class="date dpre">计划开始时间:{{node.date}}</view></view>
 				<view v-if="node.status == ING" class="uni-text-small uni-ellipsis  "> <view class="date ding">计划结束时间:{{node.date}}</view></view>
@@ -61,9 +57,8 @@
 					return {
 						  status:1,
 						  name:"王五",
-						  content:"撒活动撒后",
-						  date:"2019-06-15",
-						  tag:[],
+						  task:100,
+						  task_complete:80,
 					}
 				}
 			},

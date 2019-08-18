@@ -198,6 +198,7 @@ export default {
   background: #fff;
   padding: 0 15px;
   box-sizing: border-box;
+  border-bottom: 1rpx #E1E1E1 solid ;
   .item {
     flex: 1;
   }

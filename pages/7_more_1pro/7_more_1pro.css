@@ -1,0 +1,19 @@
+
+.container{
+
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+
+
+.scroll-view_H{
+	height: 148px;
+	white-space: nowrap; 
+	display: flex;
+	
+}
+.delete{
+	display: inline-block;
+}

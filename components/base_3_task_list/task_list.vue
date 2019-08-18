@@ -25,6 +25,9 @@
 	.task_content{
 		padding:15px;
 		background-color: #fff;
+		border-bottom: #eee 1px solid;
+	}
+	.task{
 	}
 	.task_content::after {
 		

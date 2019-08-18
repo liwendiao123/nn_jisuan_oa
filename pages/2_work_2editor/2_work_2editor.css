@@ -1,0 +1,30 @@
+
+.container{
+
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+
+.status{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	color:#999;
+	padding: 10px;
+}	
+.status .type{ font-size:  11pt; color: #f19770;}
+.status .number{  font-size:  11pt; color: #9999ff;}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
+	background-color: #fff;
+	z-index: 999999;
+}	

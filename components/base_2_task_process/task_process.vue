@@ -2,7 +2,7 @@
    <view class="page">
 		<view class="content">
 				<view class="header">
-					<text class=" uni-ellipsis" >名字</text>
+					<text class="" >{{node.name}}</text>
 					<text class="" >
 						<view v-if="node.status == PRE" class="status pre">未开始</view>
 						<view v-if="node.status == ING" class="status ing">进行中</view>
@@ -12,8 +12,8 @@
 				</view>
 				<view class="" style="height: 10px;"></view>
 				<view class="flex work">
-					<view style="font-size: 9pt">计划工作数：100</view>
-					<view style="font-size: 9pt">工作完成数：80</view>
+					<view style="font-size: 9pt">计划工作数：{{node.work}}</view>
+					<view style="font-size: 9pt">工作完成数：{{node.work_complete}}</view>
 				</view>				
 				<view class="progress-box">
 					<progress percent="20" show-info stroke-width="3" activeColor="#1abc9c" />
@@ -21,8 +21,8 @@
 				<view class="" style="height: 10px;"></view>
 				
 				<view class="flex task">
-					<view style="font-size: 9pt">计划工作数：100</view>
-					<view style="font-size: 9pt">工作完成数：80</view>
+					<view style="font-size: 9pt">任务指派数：{{node.task}}</view>
+					<view style="font-size: 9pt">任务完成数：{{node.task_complete}}</view>
 				</view>				
 				<view class="progress-box">
 					<progress percent="20" show-info stroke-width="3"  activeColor="#ff6633"  />
@@ -73,9 +73,10 @@
 					return {
 						  status:1,
 						  name:"王五",
-						  content:"撒活动撒后",
-						  date:"2019-06-15",
-						  tag:[],
+						  work:100,
+						  work_complete:80,
+						  task:100,
+						  task_complete:80,
 					}
 				}
 			},
@@ -97,6 +98,7 @@
 		display: flex;
 		justify-content: space-between;		
 	}	
+
 	.flex{
 		display: flex;
 		justify-content: space-around;

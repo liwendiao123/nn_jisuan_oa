@@ -61,6 +61,28 @@
 		background-color:#f9f9f9;
 	}
 
+	.component{
+		margin-bottom: 20upx;
+	}
+	.flex_center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.white{		background-color: #ffffff;	}
+	.line{		border-bottom: 1rpx #E1E1E1 solid ;}
+	.line_top{		border-top: 1rpx #E1E1E1 solid ;}
+	.pd15{ padding: 15px;}
+
+
+
+
+
+
+
+
+
+
 	.uni-header-logo {
 		padding: 30upx;
 		text-align: center;

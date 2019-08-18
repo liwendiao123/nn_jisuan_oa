@@ -1,7 +1,7 @@
 <template>
 	<view class="tabs">
 		<scroll-view id="tab-bar" class="scroll-h" :scroll-x="true" :show-scrollbar="false" :scroll-into-view="scrollInto">
-            <view v-for="(tab,index) in tabBars" :key="tab.id" class="uni-tab-item" :id="tab.id" :data-current="index" @click="ontabtap">
+            <view v-for="(tab,index) in list" :key="tab.id" class="uni-tab-item" :id="tab.id" :data-current="index" @click="ontabtap">
                 <text class="uni-tab-item-title" :class="tabIndex==index ? 'uni-tab-item-title-active' : ''">{{tab.name}}</text>
             </view>
         </scroll-view>
@@ -21,25 +21,19 @@
 				newsList: [{data: []}],
 				cacheTab: [],
 				tabIndex: 0,
-                tabBars: [{
-                    name: '按开始时间',
-                    id: 'guanzhu'
-                }, {
-                    name: '按结束时间',
-                    id: 'tuijian'
-                }, {
-                    name: '未完成',
-                    id: 'tiyu'
-                }, {
-                    name: '已完成',
-                    id: 'redian'
-                },],
+                
 				scrollInto: "",
+			}
+		},
+		props:{
+			list:{
+				type:Array,
+				default:[],
 			}
 		},
 		created() {
 			console.log(213278)
-			this.tabBars.forEach((tabBar) => {
+			this.list.forEach((tabBar) => {
                 this.newsList.push({
                     data: [],
                     refreshText: "",
@@ -83,7 +77,7 @@
                 }
 
                 this.tabIndex = index;
-                this.scrollInto = this.tabBars[index].id;
+                this.scrollInto = this.list[index].id;
 
                 // 释放 tabId
                 if (this.cacheTab.length > MAX_CACHE_PAGE) {

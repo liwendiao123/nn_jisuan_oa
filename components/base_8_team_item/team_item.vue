@@ -13,6 +13,7 @@
 			</view>
 			<view class="uni-list-item__extra">				
 				<uni-badge v-for="(item,key) in tag" class="tag"  :type="badgeType" :text="item" />		
+				<uni-icon class="uni-icon-wrapper" v-if="showArrow" :size="20" color="#bbb" type="arrowright" />
 			</view>
 		</view>
 	</view>
