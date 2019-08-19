@@ -178,10 +178,14 @@ export default {
     }
   }
 }
+
+
+// <style lang='less' scoped>
+// @import "~./1px.less";
+
 </script>
 
-<style lang='less' scoped>
-@import "~./1px.less";
+<style lang='scss' scoped>
 .drag-sort {
   width: 100%;
 }
