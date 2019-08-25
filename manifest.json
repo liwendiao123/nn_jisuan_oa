@@ -73,7 +73,10 @@
         "usingComponents" : true
     },
     "h5" : {
-        "title" : "OA",
-        "domain" : ""
+        "title" : "信息化项目管理",
+        "domain" : "",
+        "router" : {
+            "base" : "/nn_jisuan_oa"
+        }
     }
 }
