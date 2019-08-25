@@ -6,11 +6,3 @@
 	display: flex;
 	justify-content: center;
 }
-
-.btn{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	font-size: 11pt !important;
-}

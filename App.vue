@@ -75,6 +75,13 @@
 	.pd15{ padding: 15px;}
 
 
+	.btn{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 11pt !important;
+	}
 
 
 

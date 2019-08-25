@@ -1,11 +1,17 @@
 <template>
 	<view class="container">
-		<view class="">
-			指派给我
+		
+			<!-- 项目首页 -->
+		<view class="component white ">
+			<view class="flex">
+				<chart-arc></chart-arc>
+			</view>
 		</view>
-		<view class="">
-			由我创建
-		</view>
+		<template v-for="(item,key) in list">
+			<view class="component ">
+				<task-process-single></task-process-single>
+			</view>
+		</template>
 	</view>
 </template>
 

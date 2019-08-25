@@ -311,9 +311,8 @@
 				"text": "工作"
 			},{
 				"pagePath": "pages/3_add/3_add",
-				"iconPath": "static/images/tabbar5_1.png",
-				"selectedIconPath": "static/images/tabbar5-actived.png",
-				"text": "新增"
+				"iconPath": "static/tabbar/add.png",
+				"selectedIconPath": "static/tabbar/addactive.png"
 			},
 			{
 				"pagePath": "pages/4_self/4_self",

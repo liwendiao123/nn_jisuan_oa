@@ -19,6 +19,7 @@ import uniCollapseItem from '@/components/uni-collapse-item/uni-collapse-item.vu
 import uniSegmentedControl from '@/components/uni-segmented-control/uni-segmented-control.vue'
 import zTable from '@/components/z-table/z-table.vue'
 import uniNoticeBar from '@/components/uni-notice-bar/uni-notice-bar.vue'
+import uniGrid from '@/components/uni-grid/uni-grid.vue'
 
 // 公共组件
 Vue.component('page-head', pageHead)
@@ -35,6 +36,7 @@ Vue.component('uni-collapse-item', uniCollapseItem)
 Vue.component('uni-segmented-control', uniSegmentedControl)  // 顶部选项卡
 Vue.component('z-table', zTable)
 Vue.component('uni-notice-bar', uniNoticeBar)  // 提示框
+Vue.component('uni-grid', uniGrid)  // 九宫格
 
 
 // 自定义插件

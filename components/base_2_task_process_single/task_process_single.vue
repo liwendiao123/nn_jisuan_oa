@@ -57,6 +57,7 @@
 					return {
 						  status:1,
 						  name:"王五",
+						  position:"项目经理",
 						  task:100,
 						  task_complete:80,
 					}
