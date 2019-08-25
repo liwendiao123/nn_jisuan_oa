@@ -8,23 +8,23 @@ export default {
 				{},
 			],
 			data1: [{
-						image: '/static/c1.png',
+						image: '/static/images/nav-item5.png',
 						text: '周报管理'
 					},
 					{
-						image: '/static/c2.png',
+						image: '/static/images/nav-item1.png',
 						text: '项目任务'
 					},
 					{
-						image: '/static/c3.png',
+						image: '/static/images/nav-item2.png',
 						text: '项目团队'
 					},
 					{
-						image: '/static/c4.png',
+						image: '/static/images/nav-item3.png',
 						text: '所有项目'
 					},
 					{
-						image: '/static/c5.png',
+						image: '/static/images/nav-item7.png',
 						text: '人员分工'
 					},
 				],

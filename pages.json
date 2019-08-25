@@ -306,13 +306,13 @@
 				"text": "首页"
 			},{
 				"pagePath": "pages/2_work/2_work",
-				"iconPath": "static/images/tabbar5_1.png",
-				"selectedIconPath": "static/images/tabbar5-actived.png",
+				"iconPath": "static/images/tabbar2.png",
+				"selectedIconPath": "static/images/tabbar2-actived.png",
 				"text": "工作"
 			},{
 				"pagePath": "pages/3_add/3_add",
-				"iconPath": "static/tabbar/add.png",
-				"selectedIconPath": "static/tabbar/addactive.png"
+				"iconPath": "static/images/add.png",
+				"selectedIconPath": "static/images/addactive.png"
 			},
 			{
 				"pagePath": "pages/4_self/4_self",
@@ -321,8 +321,8 @@
 				"text": "我的"
 			},{
 				"pagePath": "pages/7_more/7_more",
-				"iconPath": "static/images/tabbar4_1.png",
-				"selectedIconPath": "static/images/tabbar4-actived.png",
+				"iconPath": "static/images/tabbar1.png",
+				"selectedIconPath": "static/images/tabbar1-actived.png",
 				"text": "更多"
 			}
 		]

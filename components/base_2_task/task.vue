@@ -124,7 +124,8 @@
 	.name{;
 		background-color: #cce6ff;
 		margin-top: 2px;
-		padding:2px 15PX 2px 15px ;
+		/* padding:2px 15PX 2px 15px ; */
+		text-align: center;
 		font-size: 9pt;
 		/* padding-right:10px ; */
 	}
