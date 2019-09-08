@@ -16,6 +16,18 @@ export default {
 	onLoad() {
 	},
 	methods: {
-
+		checkboxChange: function (e) {
+			console.log(e.detail.value)
+			// var items = this.items,
+			// 	values = e.detail.value;
+			// for (var i = 0, lenI = items.length; i < lenI; ++i) {
+			// 	const item = items[i]
+			// 	if(values.includes(item.value)){
+			// 		this.$set(item,'checked',true)
+			// 	}else{
+			// 		this.$set(item,'checked',false)
+			// 	}
+			// }
+		}
 	},
 }

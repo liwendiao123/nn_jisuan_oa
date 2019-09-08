@@ -4,11 +4,42 @@ export default {
 
 	data() {
 		return {			
-			article:{
-				title:"比赛",
-				summary:"比赛规则额",
-				date:"2019.7.2 -- 2019.7.8",
-			},
+
+			options1: [ {
+				text: '删除',
+				style: {
+					backgroundColor: 'rgb(255,58,49)'
+				}
+			}],
+			
+			// // 左右滑动的item
+			// options1: [{
+			// 		text: '取消置顶'
+			// 	}],
+			// 	options2: [{
+			// 		text: '取消',
+			// 		style: {
+			// 			backgroundColor: '#007aff'
+			// 		}
+			// 	}, {
+			// 		text: '确认',
+			// 		style: {
+			// 			backgroundColor: '#dd524d'
+			// 		}
+			// 	}],
+			// 	options3: [{
+			// 		text: '置顶'
+			// 	}, {
+			// 		text: '标记为已读',
+			// 		style: {
+			// 			backgroundColor: 'rgb(254,156,1)'
+			// 		}
+			// 	}, {
+			// 		text: '删除',
+			// 		style: {
+			// 			backgroundColor: 'rgb(255,58,49)'
+			// 		}
+			// 	}]
 			
 		};
 	},

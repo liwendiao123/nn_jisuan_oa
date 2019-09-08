@@ -20,6 +20,7 @@ import uniSegmentedControl from '@/components/uni-segmented-control/uni-segmente
 import zTable from '@/components/z-table/z-table.vue'
 import uniNoticeBar from '@/components/uni-notice-bar/uni-notice-bar.vue'
 import uniGrid from '@/components/uni-grid/uni-grid.vue'
+import uniSwipeAction from '@/components/uni-swipe-action/uni-swipe-action.vue'
 
 // 公共组件
 Vue.component('page-head', pageHead)
@@ -37,6 +38,7 @@ Vue.component('uni-segmented-control', uniSegmentedControl)  // 顶部选项卡
 Vue.component('z-table', zTable)
 Vue.component('uni-notice-bar', uniNoticeBar)  // 提示框
 Vue.component('uni-grid', uniGrid)  // 九宫格
+Vue.component('uni-swipe-action', uniSwipeAction)  // 滑动条
 
 
 // 自定义插件
@@ -46,6 +48,7 @@ import taskProcess from '@/components/base_2_task_process/task_process.vue'
 import taskProcessSingle from '@/components/base_2_task_process_single/task_process_single.vue'
 import taskProgram from '@/components/base_2_task_program/task_program.vue'
 import taskList from '@/components/base_3_task_list/task_list.vue'
+import taskStatus from '@/components/base_2_task_status/task_status.vue'
 import tabbar from '@/components/base_4_tabbar/tabbar.vue'
 import chartArc from '@/components/base_5_chart_arc/chart_arc.vue'
 import statistis from '@/components/base_6_statistis/statistis.vue'
@@ -58,6 +61,7 @@ Vue.component('task', task)
 Vue.component('task-process', taskProcess)
 Vue.component('task-process-single', taskProcessSingle)
 Vue.component('task-program', taskProgram)
+Vue.component('task-status', taskStatus)
 Vue.component('tabbar', tabbar)
 Vue.component('task-list', taskList)
 Vue.component('chart-arc', chartArc) // 饼状图

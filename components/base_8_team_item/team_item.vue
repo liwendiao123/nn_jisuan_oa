@@ -1,6 +1,9 @@
 <template>
 	<view :class="disabled ? 'uni-list-item--disabled' : ''" :hover-class="disabled || showSwitch ? '' : 'uni-list-item--hover'" class="uni-list-item" @click="onClick">
 		<view class="uni-list-item__container">
+			<view v-if="showCheck" class="uni-list-item__icon">
+				<checkbox :value="check.value" :checked="check.checked" />
+			</view>
 			<view v-if="thumb" class="uni-list-item__icon">
 				<image :src="thumb" class="uni-list-item__icon-img" />
 			</view>
@@ -28,7 +31,24 @@
 			uniIcon,
 			uniBadge
 		},
-		props: {		
+		props: {	
+			
+			//是否展示前边的选择框
+			showCheck:{
+				type: Boolean,
+				default: false
+			},
+			// 选择框
+			check:{
+				type: Object,
+				default () {
+					return {
+						value:"-1",
+						checked:false
+					}
+				}
+			},
+			
 			tag: {
 				type: Array,
 				default () {

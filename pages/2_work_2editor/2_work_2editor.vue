@@ -4,7 +4,11 @@
 			(具体工作内容具体工作内容具体工作内容具体工作内容具体工作内容具体工作内容具体工作内容具体工作内容)
 		</view>
 		
-		<view class="status white line_top">
+		
+		<view class="">
+			<task-status></task-status>
+		</view>
+		<!-- <view class="status white line_top">
 			<view class="node">
 				<view class="type">进行中</view>
 				<view class="des">状态</view>
@@ -13,7 +17,7 @@
 				<view class="number">10</view>
 				<view class="des">子任务</view>
 			</view>
-		</view>
+		</view> -->
 		
 		<view class="component ">
 			<uni-list>

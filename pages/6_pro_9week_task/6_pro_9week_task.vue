@@ -1,6 +1,10 @@
 <template>
 	<view class="container">
 
+		<view class="component">
+				<task-list :list="taskList"></task-list>
+		</view>
+		
 	</view>
 </template>
 
