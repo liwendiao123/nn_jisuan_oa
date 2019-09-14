@@ -1,3 +1,5 @@
+
+import DBUtils from './db_utils.js'
 class db{	
 	/**
 	 * @statics 静态变量
@@ -54,11 +56,19 @@ class db{
         })
     }
 	
+	
+
 	/****业务详情****/
     // 1 用户登录认证
+	
+	
     login() {
+		
+		//var obj = new Object();
+		// var jsondsy = JSON.stringify(obj)
+		
         return new Promise((resolve, reject) => {
-			this.baseURL( this.API_LOGIN, { UserName: "code",Password: "123"} )
+			this.baseURL( this.API_LOGIN, { UserName: 'code',Password: "123"} )
 			.then(res => resolve( res ))
 			.catch(res => reject(res))
         })
@@ -66,9 +76,36 @@ class db{
 	
 	
 	getName(){
-		return "hellow"
+		
+		console.log(DBUtils.db())
+		console.log(DBUtils.utils.getName())
+		
+		
+		
+		// ht
+		return new Promise((resolve, reject) => {
+			this.baseURL( "tp://221.7.253.6:9019/home/getlist", { UserName: 'code',Password: "123"} )
+			.then(res => resolve( res ))
+			.catch(res => reject(res))
+		})
+		
+		
+		// function ctor(name,pwd)
+		// {
+		// 	
+		// }
+		// 
+		return new Promise((resolve, reject) => {
+			resolve( "hellow" )
+			// this.baseURL( this.API_LOGIN, { UserName: "code",Password: "123"} )
+			// .then(res => resolve( res ))
+			// .catch(res => reject(res))
+		})
+		// return "hellow"
 	}
 	
 	
+	
+	
 }
-module.exports = new db()
+ module.exports = new db()

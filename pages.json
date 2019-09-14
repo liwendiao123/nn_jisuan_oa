@@ -272,6 +272,11 @@
 				}
 			}
 		},{
+			"path": "pages/api_test/api_test",
+			"style": {
+				"navigationBarTitleText": "API测试"
+			}
+		},{
 			"path": "pages/test/test",
 			"style": {
 				"navigationBarTitleText": "导航栏带红点和角标",
